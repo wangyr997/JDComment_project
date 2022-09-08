@@ -21,7 +21,7 @@ class JDCrawler(object):
         self.comment_queue = comment_queue
         self.sleep_interval = self.config.getfloat("main", "sleep_interval")
         self.th_list = []
-        self.res_file = "jd_comment.db"
+        self.res_file = "../output/jd_comment.db"
 
     def start(self):
         """
