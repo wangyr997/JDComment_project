@@ -44,7 +44,7 @@ def get_ua(f_user_agent):
     return random.choice(user_agent_list)
 
 if __name__ == "__main__":
-    cfg = load_config("config/setting.conf")
+    cfg = load_config("../config/setting.conf")
     print(cfg.get("file", "seed_file"))
     print(cfg.get("main", "sleep_interval"))
 
