@@ -105,8 +105,8 @@ def save_html_file(url, html, path):
 
 if __name__ == "__main__":
     logging.basicConfig(level=logging.DEBUG)
-    mgr = DataSaverMgr("test.csv")
+    mgr = DataSaverMgr("../output/test.csv")
     mgr.save_row(list(map(str, range(1, 10))))
 
-    mgr = DataSaverMgr("test.db")
+    mgr = DataSaverMgr("../output/test.db")
     mgr.save_row(list(map(str, range(1, 10))))
