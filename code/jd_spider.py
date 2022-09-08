@@ -53,4 +53,4 @@ def main(cfg_path):
 if __name__ == "__main__":
     fmt_str = "%(levelname)s: %(asctime)s - %(filename)s:L%(lineno)d:%(funcName)s - %(message)s"
     logging.basicConfig(level=logging.INFO, format=fmt_str)
-    main("setting.conf")
+    main("../config/setting.conf")
