@@ -18,7 +18,7 @@ def export_data(f_path):
     """
     导出数据
     """
-    mgr = data_saver.DataSaverMgr("jd_comment_data.csv", schema=SCHEMA)
+    mgr = data_saver.DataSaverMgr("../output/jd_comment_data.csv", schema=SCHEMA)
     for fname in glob.glob(f_path):
         logging.info("loading " + fname)
         with open(fname, encoding='utf-8') as f_in:
